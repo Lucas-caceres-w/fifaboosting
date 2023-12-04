@@ -1,0 +1,20 @@
+<section id="pagos" class="bg-black w-full h-max md:h-36 grid grid-cols-4 md:grid-cols-8 items-center place-items-center"></section>
+<script>
+  const images = [
+    { imagen: "./assets/mp.png" },
+    { imagen: "./assets/binance.png" },
+    { imagen: "./assets/transferencia.png" },
+    { imagen: "./assets/paypal.png" },
+    { imagen: "./assets/tether.png" },
+    { imagen: "./assets/bizum.png" },
+    { imagen: "./assets/wise.png" },
+    { imagen: "./assets/skrill.png" },
+  ];
+  const container = document.getElementById("pagos");
+
+  container.innerHTML = images
+    .map((e) => {
+      return `<img class='w-min h-max hover:scale-110 transition-all' src="${e.imagen}" alt="" />`;
+    })
+    .join("");
+</script>

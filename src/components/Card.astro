@@ -1,0 +1,15 @@
+---
+const { precio, rango, descripcion, color } = Astro.props;
+---
+
+<div
+  class={`bg-[#0E112B] w-full p-4 rounded flex flex-col gap-2 items-center hover:ring-4 ring-${color}-500`}
+>
+  <img src={rango} alt="" class="" />
+  <p class="text-white text-xl md:text-2xl uppercase font-bold">{descripcion}</p>
+  <p class="text-white text-xl md:text-2xl">{precio}$</p>
+  <button
+    class="text-white text-sm md:text-lg bg-blue-600 px-4 py-2 w-full md:w-max rounded-md hover:bg-blue-400 hover:-translate-y-1 transition-all"
+    >CONTRATAR</button
+  >
+</div>

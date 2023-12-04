@@ -1,0 +1,213 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Navbar.astro";
+import Portada from "../components/Portada.astro";
+import Pagos from "../components/Pagos.astro";
+import Card from "../components/Card.astro";
+import Faqs from "../components/Faqs.astro";
+import Rivals from "../components/SwiperRivals.astro";
+
+const clasificacion = [
+  {
+    precio: "25,00",
+    rango: "./assets/liga-1.png",
+    descripcion: "rango 1",
+  },
+  {
+    precio: "20,00",
+    rango: "./assets/liga-2.png",
+    descripcion: "rango 2",
+  },
+  {
+    precio: "16,00",
+    rango: "./assets/liga-3.png",
+    descripcion: "rango 3",
+  },
+  {
+    precio: "12,00",
+    rango: "./assets/liga-4.png",
+    descripcion: "rango 4",
+  },
+  {
+    precio: "10,00",
+    rango: "./assets/liga-5.png",
+    descripcion: "rango 5",
+  },
+];
+
+const finales = [
+  {
+    precio: "80,00",
+    rango: "./assets/liga-1.png",
+    descripcion: "rango 1",
+  },
+  {
+    precio: "65,00",
+    rango: "./assets/liga-2.png",
+    descripcion: "rango 2",
+  },
+  {
+    precio: "55,00",
+    rango: "./assets/liga-3.png",
+    descripcion: "rango 3",
+  },
+  {
+    precio: "45,00",
+    rango: "./assets/liga-4.png",
+    descripcion: "rango 4",
+  },
+  {
+    precio: "36,00",
+    rango: "./assets/liga-5.png",
+    descripcion: "rango 5",
+  },
+];
+
+const clubes = [
+  {
+    precio: "75,00",
+    descripcion: "50 partidos",
+  },
+  {
+    precio: "130,00",
+    descripcion: "100 partidos",
+  },
+  {
+    precio: "250,00",
+    descripcion: "200 partidos",
+  },
+];
+
+const coins = [
+  {
+    descripcion: "100k",
+    precio: "7,00",
+  },
+  {
+    descripcion: "300k",
+    precio: "19,00",
+  },
+  {
+    descripcion: "500k",
+    precio: "37,00",
+  },
+  {
+    descripcion: "1M",
+    precio: "74,00",
+  },
+];
+---
+
+<Layout title="Fifa Boosting Latam">
+  <Nav />
+  <Portada />
+  <Pagos />
+  <section class="pt-12">
+    <h2 class="text-4xl text-center text-white font-bold">
+      UT CHAMPIONS CLASIFICACIÒN
+    </h2>
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
+    >
+      {
+        clasificacion.map((e) => (
+          <Card
+            precio={e.precio}
+            rango={e.rango}
+            descripcion={e.descripcion}
+            color="yellow"
+          />
+        ))
+      }
+    </div>
+    <h2 class="text-4xl text-center text-white font-bold">
+      UT CHAMPIONS FINALES
+    </h2>
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center justify-between w-10/12 m-auto py-12"
+    >
+      {
+        finales.map((e) => (
+          <Card
+            precio={e.precio}
+            rango={e.rango}
+            descripcion={e.descripcion}
+            color="red"
+          />
+        ))
+      }
+    </div>
+    <h2 class="text-4xl text-center text-white font-bold">DIVISION RIVALS</h2>
+    <div
+      class="flex flex-row gap-6 items-center justify-between w-10/12 m-auto py-12"
+    >
+      <Rivals />
+    </div>
+    <h2 class="text-4xl text-center text-white font-bold">CLUBES PRO</h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
+    >
+      {
+        clubes.map((e) => (
+          <Card
+            precio={e.precio}
+            rango={"./assets/clubes.png"}
+            descripcion={e.descripcion}
+            color="blue"
+          />
+        ))
+      }
+    </div>
+    <h2 class="text-4xl text-center text-white font-bold">DRAFT</h2>
+    <div
+      class="flex flex-row gap-2 items-center justify-start w-11/12 lg:w-10/12 m-auto py-12"
+    >
+      <Card rango="./assets/draft.png" precio="12,00" descripcion="4 wins" />
+    </div>
+    <section class="w-10/12 flex flex-col lg:flex-row gap-6 m-auto py-12 items-stretch">
+      <img class="rounded-md w-full lg:w-5/12" src="./assets/guardiola.PNG" alt="" />
+      <div
+        class="rounded-md bg-[#0E112B] w-full px-6 lg:px-16 py-4 lg:py-6 flex flex-col justify-around gap-6"
+      >
+        <h4 class="text-2xl xl:text-3xl 2xl:text-5xl font-bold text-white">
+          COACHING $20.00 usd
+        </h4>
+        <p class="text-sm lg:text-base xl:text-lg 2xl:text-2xl font-extralight text-white">
+          Precio por hora. El cliente transmite para que el coach vea su juego
+          mientras conversan en Discord/Skype (o cualquier plataforma similar
+          preferida por el cliente). El coach explicará los ángulos correctos,
+          la toma de decisiones correcta en situaciones clave, movimientos de
+          habilidad, mejoras tácticas, formaciones, trucos y mucho más desde sus
+          propio conocimiento y forma de ver el juego, con las mejores
+          respuestas a las preguntas del cliente.
+        </p>
+        <button
+          class="text-white bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-400 hover:-translate-y-1 transition-all w-max m-auto"
+          >CONTRATAR</button
+        >
+      </div>
+    </section>
+    <h2 class="text-4xl text-center text-white font-bold">COINS</h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
+    >
+      {
+        coins.map((e) => (
+          <Card
+            precio={e.precio}
+            rango={"./assets/coins.png"}
+            descripcion={e.descripcion}
+            color="blue"
+          />
+        ))
+      }
+    </div>
+  </section>
+  <div id="faqs" class="w-10/12 m-auto pb-12">
+    <div class="flex flex-row justify-between items-center">
+      <h3 class="text-3xl font-medium text-white">Preguntas frecuentes:</h3>
+      <img class="w-56" src="./assets/fifaboost.png" alt="" />
+    </div>
+    <Faqs />
+  </div>
+</Layout>
