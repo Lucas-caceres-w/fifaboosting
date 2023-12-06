@@ -26,6 +26,8 @@
     "res4": "En caso de que el pro player no logre el rango contratado tiene 2 opciones:",
     "res4/2": "Reembolso equivalente a la diferencia entre el rango contratado y el conseguido.",
     "res4/3" : "Saldo a favor.",
-    "res5": "El cliente transmite para que el coach vea su juego mientras conversan en Discord/Skype (o cualquier plataforma similar preferida por el cliente). El coach explicará los ángulos correctos, la toma de decisiones correcta en situaciones clave, movimientos de habilidad, mejoras tácticas, formaciones, trucos y mucho más desde sus propio conocimiento y forma de ver el juego, con las mejores respuestas a las preguntas del cliente."
+    "res5": "El cliente transmite para que el coach vea su juego mientras conversan en Discord/Skype (o cualquier plataforma similar preferida por el cliente). El coach explicará los ángulos correctos, la toma de decisiones correcta en situaciones clave, movimientos de habilidad, mejoras tácticas, formaciones, trucos y mucho más desde sus propio conocimiento y forma de ver el juego, con las mejores respuestas a las preguntas del cliente.",
+    "to": "a",
+    "buy": "COMPRAR"
   }
 }

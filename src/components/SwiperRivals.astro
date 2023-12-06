@@ -1,45 +1,46 @@
 ---
 import Card from "./Card.astro";
+import i18next, { t } from "i18next";
 
 const rivals = [
   {
-    descripcion: "division 10 a 9",
+    descripcion: `division 10 ${t("home.to")} 9`,
     precio: "15,00",
   },
   {
-    descripcion: "division 9 a 8",
+    descripcion: `division 9 ${t("home.to")} 8`,
     precio: "15,00",
   },
   {
-    descripcion: "division 8 a 7",
+    descripcion: `division 8 ${t("home.to")} 7`,
     precio: "15,00",
   },
   {
-    descripcion: "division 7 a 6",
+    descripcion: `division 7 ${t("home.to")} 6`,
     precio: "15,00",
   },
   {
-    descripcion: "division 6 a 5",
+    descripcion: `division 6 ${t("home.to")} 5`,
     precio: "20,00",
   },
   {
-    descripcion: "division 5 a 4",
+    descripcion: `division 5 ${t("home.to")} 4`,
     precio: "25,00",
   },
   {
-    descripcion: "division 4 a 3",
+    descripcion: `division 4 ${t("home.to")} 3`,
     precio: "30,00",
   },
   {
-    descripcion: "division 3 a 2",
+    descripcion: `division 3 ${t("home.to")} 2`,
     precio: "35,00",
   },
   {
-    descripcion: "division 2 a 1",
+    descripcion: `division 2 ${t("home.to")} 1`,
     precio: "40,00",
   },
   {
-    descripcion: "division 1 a elite",
+    descripcion: `division 1 ${t("home.to")} elite`,
     precio: "50,00",
   },
 ];
