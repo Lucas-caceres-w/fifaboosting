@@ -104,8 +104,8 @@ const coins = [
   <Portada />
   <Pagos />
   <section class="pt-12">
-    <h2 class="text-4xl text-center text-white font-bold">
-      UT CHAMPIONS CLASIFICACIÒN
+    <h2 id="clasi" class="text-4xl text-center text-white font-bold">
+      UT CHAMPIONS CLASIFICACIÓN
     </h2>
     <div
       class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
@@ -121,7 +121,7 @@ const coins = [
         ))
       }
     </div>
-    <h2 class="text-4xl text-center text-white font-bold">
+    <h2 id="finals" class="text-4xl text-center text-white font-bold">
       UT CHAMPIONS FINALES
     </h2>
     <div
@@ -138,13 +138,17 @@ const coins = [
         ))
       }
     </div>
-    <h2 class="text-4xl text-center text-white font-bold">DIVISION RIVALS</h2>
+    <h2 id="rivals" class="text-4xl text-center text-white font-bold">
+      DIVISIÓN RIVALS
+    </h2>
     <div
       class="flex flex-row gap-6 items-center justify-between w-10/12 m-auto py-12"
     >
       <Rivals />
     </div>
-    <h2 class="text-4xl text-center text-white font-bold">CLUBES PRO</h2>
+    <h2 id="clubes" class="text-4xl text-center text-white font-bold">
+      CLUBES PRO
+    </h2>
     <div
       class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
     >
@@ -159,13 +163,14 @@ const coins = [
         ))
       }
     </div>
-    <h2 class="text-4xl text-center text-white font-bold">DRAFT</h2>
+    <h2 id="draft" class="text-4xl text-center text-white font-bold">DRAFT</h2>
     <div
       class="flex flex-row gap-2 items-center justify-start w-11/12 lg:w-10/12 m-auto py-12"
     >
       <Card rango="./assets/draft.png" precio="12,00" descripcion="4 wins" />
     </div>
     <section
+      id="coach"
       class="w-10/12 flex flex-col lg:flex-row gap-6 m-auto py-12 items-stretch"
     >
       <img
@@ -176,7 +181,9 @@ const coins = [
       <div
         class="rounded-md bg-[#0E112B] w-full px-6 lg:px-16 py-4 lg:py-6 flex flex-col justify-around gap-6"
       >
-        <h4 class="text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold text-white">
+        <h4
+          class="text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold text-white"
+        >
           COACHING $20.00 usd
         </h4>
         <p
@@ -190,7 +197,7 @@ const coins = [
         >
       </div>
     </section>
-    <h2 class="text-4xl text-center text-white font-bold">COINS</h2>
+    <h2 id="coins" class="text-4xl text-center text-white font-bold">COINS</h2>
     <div
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
     >
@@ -209,13 +216,17 @@ const coins = [
   </section>
   <div id="faqs" class="w-10/12 m-auto pb-12">
     <div class="flex flex-row justify-between items-center">
-      <h3 class="text-xl md:text-3xl font-medium text-white">{t("home.faqs")}</h3>
+      <h3 class="text-xl md:text-3xl font-medium text-white">
+        {t("home.faqs")}
+      </h3>
       <img class="w-44 md:w-56" src="./assets/fifaboost.png" alt="" />
     </div>
     <Faqs />
   </div>
   <Footer />
-  <div class="fixed bg-green-500 bottom-5 right-5 z-50 rounded-full w-12 h-12 grid place-items-center cursor-pointer">
+  <div
+    class="fixed bg-green-500 bottom-5 right-5 z-50 rounded-full w-12 h-12 grid place-items-center cursor-pointer"
+  >
     <img src="./assets/wsp.png" class="w-8" alt="" />
   </div>
 </Layout>
