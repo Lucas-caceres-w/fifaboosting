@@ -1,29 +1,31 @@
 ---
 const images = [
-  { imagen: "./assets/mp.png" },
-  { imagen: "./assets/binance.png" },
-  { imagen: "./assets/transferencia.png" },
-  { imagen: "./assets/paypal.png" },
-  { imagen: "./assets/tether.png" },
-  { imagen: "./assets/bizum.png" },
-  { imagen: "./assets/wise.png" },
-  { imagen: "./assets/skrill.png" },
+    { imagen: './assets/mp.png' },
+    { imagen: './assets/binance.png' },
+    { imagen: './assets/transferencia.png' },
+    { imagen: './assets/paypal.png' },
+    { imagen: './assets/tether.png' },
+    { imagen: './assets/bizum.png' },
+    { imagen: './assets/wise.png' },
+    { imagen: './assets/skrill.png' },
 ];
 ---
 
 <section
-  id="pagos"
-  class="bg-black w-full h-max md:h-36 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-8 items-center place-items-center py-2"
+    id="pagos"
+    class="w-9/12 m-auto h-max my-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 items-center place-items-center py-2 gap-12"
 >
-  {
-    images.map((e) => {
-      return (
-        <img
-          class="w-20 sm:w-min h-max object-contain sm:object-cover hover:scale-110 transition-all"
-          src={e.imagen}
-          alt=""
-        />
-      );
-    })
-  }
+    {
+        images.map((e) => {
+            return (
+                <div class="w-full h-full bg-neutral-900 grid place-items-center rounded-md border border-[#9ED920]">
+                    <img
+                        class="sm:w-min h-max object-contain sm:object-cover hover:scale-110 transition-all"
+                        src={e.imagen}
+                        alt=""
+                    />
+                </div>
+            );
+        })
+    }
 </section>

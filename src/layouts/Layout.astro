@@ -12,15 +12,33 @@ const { title } = Astro.props;
 <html lang={i18next.language}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta
+      name="description"
+      content="Mejor precio del mercado GARANTIZADO. Equipo de pro players, especialistas en FIFA EA FC24 boosting."
+    />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://fifaboostinglatam.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Mejor precio del mercado GARANTIZADO. Equipo de pro players, especialistas en FIFA EA FC24 boosting." />
+    <meta property="og:image" content="./assets/logo-og.jpeg" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="fifaboostinglatam.com" />
+    <meta property="twitter:url" content="https://fifaboostinglatam.com/" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content="Mejor precio del mercado GARANTIZADO. Equipo de pro players, especialistas en FIFA EA FC24 boosting." />
+    <meta name="twitter:image" content="./assets/logo-og.jpeg" />
+
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/LOGOBOOST 2.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script async src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-  <body class="bg-neutral-600">
+  <body class="bg-gradient-to-b from-[#353851] to-[#05060D]">
     <slot />
   </body>
 </html>

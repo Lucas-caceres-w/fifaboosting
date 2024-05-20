@@ -9,8 +9,8 @@
     "rank3": "rank 3",
     "rank4": "rank 4",
     "rank5": "rank 5",
-    "title-port": "PROPLAYERS TEAM, BOOSTING ESPECIALISTS",
-    "price": "BEST PRICE IN THE MARKET",
+    "title-port": "PRO PLAYERS TEAM, BOOSTING SPECIALISTS",
+    "price": "BEST PRICE ON THE MARKET",
     "contact": "CONTACT US",
     "hire": "HIRE",
     "partidos": "GAMES",
@@ -26,6 +26,8 @@
     "res4": "In case the pro player does not achieve the contracted rank, he has 2 options:",
     "res4/2": "Reimbursement equivalent to the difference between the rank contracted and the rank achieved.",
     "res4/3": "Credit balance.",
-    "res5": "The client streams for the coach to watch their game while they chat on Discord/Skype (or any similar platform preferred by the client). The coach will explain the right angles, the right decision making in key situations, skill moves, tactical improvements, formations, tricks and much more from their own knowledge and way of seeing the game, with the best answers to the client's questions."
+    "res5": "The client streams for the coach to watch their game while they chat on Discord/Skype (or any similar platform preferred by the client). The coach will explain the right angles, the right decision making in key situations, skill moves, tactical improvements, formations, tricks and much more from their own knowledge and way of seeing the game, with the best answers to the client's questions.",
+    "to": "to",
+    "buy": "BUY"
   }
 }

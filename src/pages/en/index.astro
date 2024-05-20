@@ -105,10 +105,10 @@ const coins = [
   <Pagos />
   <section class="pt-12">
     <h2 id="clasi" class="text-4xl text-center text-white font-bold">
-      UT CHAMPIONS CLASIFICACIÓN
+      UT CHAMPIONS
     </h2>
     <div
-      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
+      class="grid grid-cols-2 sm:grid-cols-3 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
     >
       {
         clasificacion.map((e) => (
@@ -117,23 +117,6 @@ const coins = [
             rango={e.rango}
             descripcion={e.descripcion}
             color="yellow"
-          />
-        ))
-      }
-    </div>
-    <h2 id="finals" class="text-4xl text-center text-white font-bold">
-      UT CHAMPIONS FINALES
-    </h2>
-    <div
-      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center justify-between w-10/12 m-auto py-12"
-    >
-      {
-        finales.map((e) => (
-          <Card
-            precio={e.precio}
-            rango={e.rango}
-            descripcion={e.descripcion}
-            color="red"
           />
         ))
       }
@@ -191,9 +174,11 @@ const coins = [
         >
           {t("home.guardiola")}
         </p>
-        <button
+        <a
+          href="https://wa.me/message/U23XABBSRP2JC1"
+          target="_blank"
           class="text-white bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-400 hover:-translate-y-1 transition-all w-max m-auto"
-          >CONTRATAR</button
+          >CONTRATAR</a
         >
       </div>
     </section>
@@ -224,9 +209,11 @@ const coins = [
     <Faqs />
   </div>
   <Footer />
-  <div
+  <a
+    href="https://wa.me/message/U23XABBSRP2JC1"
+    target="_blank"
     class="fixed bg-green-500 bottom-5 right-5 z-50 rounded-full w-12 h-12 grid place-items-center cursor-pointer"
   >
     <img src="./assets/wsp.png" class="w-8" alt="" />
-  </div>
+  </a>
 </Layout>
