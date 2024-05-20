@@ -1,100 +1,100 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Nav from '../components/Navbar.astro';
-import Portada from '../components/Portada.astro';
-import Pagos from '../components/Pagos.astro';
-import Card from '../components/Card.astro';
-import Faqs from '../components/Faqs.astro';
-import Rivals from '../components/SwiperRivals.astro';
-import Footer from '../components/Footer.astro';
-import i18next, { t, changeLanguage } from 'i18next';
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Navbar.astro";
+import Portada from "../components/Portada.astro";
+import Pagos from "../components/Pagos.astro";
+import Card from "../components/Card.astro";
+import Faqs from "../components/Faqs.astro";
+import Rivals from "../components/SwiperRivals.astro";
+import Footer from "../components/Footer.astro";
+import i18next, { t, changeLanguage } from "i18next";
 
-changeLanguage('es');
+changeLanguage("es");
 
 const clasificacion = [
     {
-        precio: '25,00',
-        rango: './assets/liga-1.png',
-        descripcion: t('home.rank1'),
+        precio: "25,00",
+        rango: "./assets/liga-1.png",
+        descripcion: t("home.rank1"),
     },
     {
-        precio: '20,00',
-        rango: './assets/liga-2.png',
-        descripcion: t('home.rank2'),
+        precio: "20,00",
+        rango: "./assets/liga-2.png",
+        descripcion: t("home.rank2"),
     },
     {
-        precio: '16,00',
-        rango: './assets/liga-3.png',
-        descripcion: t('home.rank3'),
+        precio: "16,00",
+        rango: "./assets/liga-3.png",
+        descripcion: t("home.rank3"),
     },
     {
-        precio: '12,00',
-        rango: './assets/liga-4.png',
-        descripcion: t('home.rank4'),
+        precio: "12,00",
+        rango: "./assets/liga-4.png",
+        descripcion: t("home.rank4"),
     },
     {
-        precio: '10,00',
-        rango: './assets/liga-5.png',
-        descripcion: t('home.rank5'),
+        precio: "10,00",
+        rango: "./assets/liga-5.png",
+        descripcion: t("home.rank5"),
     },
 ];
 const finales = [
     {
-        precio: '80,00',
-        rango: './assets/liga-1.png',
-        descripcion: t('home.rank1'),
+        precio: "80,00",
+        rango: "./assets/liga-1.png",
+        descripcion: t("home.rank1"),
     },
     {
-        precio: '65,00',
-        rango: './assets/liga-2.png',
-        descripcion: t('home.rank2'),
+        precio: "65,00",
+        rango: "./assets/liga-2.png",
+        descripcion: t("home.rank2"),
     },
     {
-        precio: '55,00',
-        rango: './assets/liga-3.png',
-        descripcion: t('home.rank3'),
+        precio: "55,00",
+        rango: "./assets/liga-3.png",
+        descripcion: t("home.rank3"),
     },
     {
-        precio: '45,00',
-        rango: './assets/liga-4.png',
-        descripcion: t('home.rank4'),
+        precio: "45,00",
+        rango: "./assets/liga-4.png",
+        descripcion: t("home.rank4"),
     },
     {
-        precio: '36,00',
-        rango: './assets/liga-5.png',
-        descripcion: t('home.rank5'),
+        precio: "36,00",
+        rango: "./assets/liga-5.png",
+        descripcion: t("home.rank5"),
     },
 ];
 const clubes = [
     {
-        precio: '75,00',
-        descripcion: '50 ' + t('home.partidos'),
+        precio: "75,00",
+        descripcion: "50 " + t("home.partidos"),
     },
     {
-        precio: '130,00',
-        descripcion: '100 ' + t('home.partidos'),
+        precio: "130,00",
+        descripcion: "100 " + t("home.partidos"),
     },
     {
-        precio: '250,00',
-        descripcion: '200 ' + t('home.partidos'),
+        precio: "250,00",
+        descripcion: "200 " + t("home.partidos"),
     },
 ];
 const coins = [
     {
-        descripcion: '100k',
-        precio: '7,00',
+        descripcion: "100k",
+        precio: "7,00",
     },
     {
-        descripcion: '300k',
-        precio: '19,00',
+        descripcion: "300k",
+        precio: "19,00",
     },
     {
-        descripcion: '500k',
-        precio: '37,00',
+        descripcion: "500k",
+        precio: "37,00",
     },
     {
-        descripcion: '1M',
-        precio: '74,00',
+        descripcion: "1M",
+        precio: "74,00",
     },
 ];
 ---
@@ -105,7 +105,7 @@ const coins = [
     <Pagos />
     <section class="pt-12">
         <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-between w-11/12 xl:w-10/12 m-auto pt-12 pb-6"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-between w-11/12 lg:w-10/12 2xl:w-9/12 m-auto pt-12 pb-6"
         >
             <Card
                 precio={''}
@@ -127,7 +127,7 @@ const coins = [
             />
         </div>
         <div
-            class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-between w-11/12 xl:w-10/12 m-auto"
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-between w-11/12 lg:w-10/12 2xl:w-9/12 m-auto"
         >
             <Card
                 rango="./assets/draft.png"

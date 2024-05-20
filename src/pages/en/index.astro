@@ -99,121 +99,95 @@ const coins = [
 ];
 ---
 
-<Layout title={t("home.title")}>
-  <Nav />
-  <Portada />
-  <Pagos />
-  <section class="pt-12">
-    <h2 id="clasi" class="text-4xl text-center text-white font-bold">
-      UT CHAMPIONS
-    </h2>
-    <div
-      class="grid grid-cols-2 sm:grid-cols-3 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
-    >
-      {
-        clasificacion.map((e) => (
-          <Card
-            precio={e.precio}
-            rango={e.rango}
-            descripcion={e.descripcion}
-            color="yellow"
-          />
-        ))
-      }
-    </div>
-    <h2 id="rivals" class="text-4xl text-center text-white font-bold">
-      DIVISIÓN RIVALS
-    </h2>
-    <div
-      class="flex flex-row gap-6 items-center justify-between w-10/12 m-auto py-12"
-    >
-      <Rivals />
-    </div>
-    <h2 id="clubes" class="text-4xl text-center text-white font-bold">
-      CLUBES PRO
-    </h2>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
-    >
-      {
-        clubes.map((e) => (
-          <Card
-            precio={e.precio}
-            rango={"./assets/clubes.png"}
-            descripcion={e.descripcion}
-            color="blue"
-          />
-        ))
-      }
-    </div>
-    <h2 id="draft" class="text-4xl text-center text-white font-bold">DRAFT</h2>
-    <div
-      class="flex flex-row gap-2 items-center justify-start w-11/12 lg:w-10/12 m-auto py-12"
-    >
-      <Card rango="./assets/draft.png" precio="12,00" descripcion="4 wins" />
-    </div>
-    <section
-      id="coach"
-      class="w-10/12 flex flex-col lg:flex-row gap-6 m-auto py-12 items-stretch"
-    >
-      <img
-        class="rounded-md w-full lg:w-5/12"
-        src="./assets/guardiola.PNG"
-        alt=""
-      />
-      <div
-        class="rounded-md bg-[#0E112B] w-full px-6 lg:px-16 py-4 lg:py-6 flex flex-col justify-around gap-6"
-      >
-        <h4
-          class="text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl font-bold text-white"
+<Layout title={t('home.title')}>
+    <Nav />
+    <Portada />
+    <Pagos />
+    <section class="pt-12">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-between w-11/12 xl:w-10/12 m-auto pt-12 pb-6"
         >
-          COACHING $20.00 usd
-        </h4>
-        <p
-          class="text-[12px] sm:text-sm lg:text-base xl:text-lg 2xl:text-2xl font-extralight text-white"
+            <Card
+                precio={''}
+                rango={'./assets/liga-1.png'}
+                descripcion={'UT CHAMPIONS'}
+                color="yellow"
+            />
+            <Card
+                precio={''}
+                rango={'./assets/clubes.png'}
+                descripcion={'CLUBER PRO'}
+                color="yellow"
+            />
+            <Card
+                precio={''}
+                rango={'./assets/divison.png'}
+                descripcion={'DIVISION RIVALS'}
+                color="yellow"
+            />
+        </div>
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-between w-11/12 xl:w-10/12 m-auto"
         >
-          {t("home.guardiola")}
-        </p>
-        <a
-          href="https://wa.me/message/U23XABBSRP2JC1"
-          target="_blank"
-          class="text-white bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-400 hover:-translate-y-1 transition-all w-max m-auto"
-          >CONTRATAR</a
+            <Card
+                rango="./assets/draft.png"
+                precio="12,00"
+                descripcion="DRAFT"
+            />
+            <Card
+                precio={''}
+                rango={'./assets/coins.png'}
+                descripcion={'COINS'}
+                width="w-96 object-cover"
+                buy={t('home.buy')}
+            />
+        </div>
+        <section
+            id="coach"
+            class="w-11/12 md:w-9/12 flex flex-col lg:flex-row gap-6 m-auto py-12 my-12 items-stretch"
         >
-      </div>
+            <img
+                class="rounded-md w-full lg:w-5/12"
+                src="./assets/guardiola.PNG"
+                alt=""
+            />
+            <div
+                class="rounded-md bg-gradient-to-b from-[#0F122B] to-[#252C6D] w-full px-6 lg:px-16 py-4 lg:py-6 flex flex-col justify-around gap-6 border-2 border-[#9ED920]"
+            >
+                <h4
+                    class="text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-medium text-[#9ED920]"
+                >
+                    COACHING a $20.00 usd
+                </h4>
+                <p
+                    class="text-[12px] sm:text-sm lg:text-base xl:text-lg 2xl:text-xl !font-light text-white"
+                >
+                    {t('home.guardiola')}
+                </p>
+                <a
+                    href="https://wa.me/message/U23XABBSRP2JC1"
+                    target="_blank"
+                    class="text-black bg-[#9ED920] px-4 py-2 rounded-md hover:bg-blue-400 hover:-translate-y-1 transition-all w-max m-auto font-semibold"
+                    >CONTRATAR</a
+                >
+            </div>
+        </section>
     </section>
-    <h2 id="coins" class="text-4xl text-center text-white font-bold">COINS</h2>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center justify-between w-11/12 lg:w-10/12 m-auto py-12"
+    <div id="faqs" class="w-11/12 md:w-9/12 m-auto pb-12">
+        <div class="flex flex-row justify-between items-center">
+            <h3 class="text-xl md:text-3xl font-medium text-white">
+                {t('home.faqs')}
+            </h3>
+            <img class="w-44 md:w-56" src="./assets/fifaboost.png" alt="" />
+        </div>
+        <Faqs />
+    </div>
+    <Footer />
+    <a
+        href="https://wa.me/message/U23XABBSRP2JC1"
+        target="_blank"
+        class="fixed bg-green-500 bottom-5 right-5 z-50 rounded-full w-12 h-12 grid place-items-center cursor-pointer"
     >
-      {
-        coins.map((e) => (
-          <Card
-            precio={e.precio}
-            rango={"./assets/coins.png"}
-            descripcion={e.descripcion}
-            color="blue"
-            buy={t("home.buy")}
-          />
-        ))
-      }
-    </div>
-  </section>
-  <div id="faqs" class="w-10/12 m-auto pb-12">
-    <div class="flex flex-row justify-between items-center">
-      <h3 class="text-xl md:text-3xl font-medium text-white">
-        {t("home.faqs")}
-      </h3>
-      <img class="w-44 md:w-56" src="./assets/fifaboost.png" alt="" />
-    </div>
-    <Faqs />
-  </div>
-  <Footer />
-  <a
-    href="https://wa.me/message/U23XABBSRP2JC1"
-    target="_blank"
-    class="fixed bg-green-500 bottom-5 right-5 z-50 rounded-full w-12 h-12 grid place-items-center cursor-pointer"
-  >
-    <img src="./assets/wsp.png" class="w-8" alt="" />
-  </a>
+        <img src="./assets/wsp.png" class="w-8" alt="" />
+    </a>
 </Layout>
